@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/seekbar_bg">
+        <shape>
+            <corners android:radius="2dp" />
+            <solid android:color="#6661bec2" />
+            <size
+                android:width="440dp"
+                android:height="4dp" />
+        </shape>
+    </item>
+    <item android:id="@+id/seekbar_progress">
+        <clip>
+            <shape>
+                <corners android:radius="2dp" />
+                <solid android:color="#61bec2" />
+                <size
+                    android:width="440dp"
+                    android:height="4dp" />
+            </shape>
+        </clip>
+
+    </item>
+</layer-list>

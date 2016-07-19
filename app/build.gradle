@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.demos.testapp"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.0'
+    compile 'com.android.support:design:24.1.0'
+    compile files('src/core-3.2.1.jar')
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.android.support:recyclerview-v7:24.1.0'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    provided 'com.android.support:support-annotations:24.1.0'
+}

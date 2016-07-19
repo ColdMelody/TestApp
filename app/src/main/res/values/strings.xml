@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="first_in">SnackBar</string>
+    <string name="qrcode">QRCode</string>
+    <string name="getqrcode">GetQrcode</string>
+    <string name="scroller">Scroller</string>
+    <string name="str_scroll">Scroll</string>
+    <string name="str_matrix">matrix</string>
+    <string name="str_cache">LurCache</string>
+    <string name="sendbro">SendBro</string>
+    <string name="str_bro">Brocast</string>
+    <string name="startanim">StartAnim</string>
+    <string name="str_anim">Animation</string>
+    <string name="str_uil">UIL</string>
+</resources>
