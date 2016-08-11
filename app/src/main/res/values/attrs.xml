@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoLoginButton">
+        <attr name="ATLoginButton_button_color" format="color"/>
+        <attr name="ATLoginButton_text_color" format="color"/>
+        <attr name="ATLoginButton_text_size" format="dimension"/>
+        <attr name="ATLoginButton_login_text" format="string"/>
+        <attr name="ATLoginButton_failed_text" format="string"/>
+        <attr name="ATLoginButton_circle_loading_color" format="color"/>
+        <attr name="ATLoginButton_circle_loading_width" format="dimension"/>
+        <attr name="ATLoginButton_failed_button_color" format="color"/>
+    </declare-styleable>
+</resources>

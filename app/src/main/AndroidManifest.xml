@@ -43,7 +43,12 @@
         </receiver>
 
         <activity android:name=".activity.AnimationActivity" />
-        <activity android:name=".activity.UilActivity"></activity>
+        <activity android:name=".activity.UilActivity" />
+        <activity android:name=".activity.WebActivity" />
+        <activity
+            android:name=".activity.PullToRreshActivity"
+            android:label="@string/title_activity_pull_to_rresh"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

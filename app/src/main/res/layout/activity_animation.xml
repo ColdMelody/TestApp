@@ -3,19 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:orientation="vertical"
     tools:context="com.demos.testapp.activity.AnimationActivity">
+
     <Button
+        android:id="@+id/start_anim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/startanim"
-        android:id="@+id/start_anim" />
+        android:text="@string/startanim" />
+
     <TextView
         android:id="@+id/show"
-        android:textSize="25sp"
-        android:text="Property Animation"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Property Animation"
+        android:textSize="25sp" />
+
+    <!--<com.demos.testapp.view.AutoLoginButton xmlns:custom="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/auto_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--custom:ATLoginButton_button_color="@color/colorPrimary"-->
+        <!--custom:ATLoginButton_circle_loading_color="@color/color_bg"-->
+        <!--custom:ATLoginButton_failed_button_color="@color/seekbar_bg_color"-->
+        <!--custom:ATLoginButton_failed_text="Failed"-->
+        <!--custom:ATLoginButton_login_text="Login" />-->
 
 </LinearLayout>

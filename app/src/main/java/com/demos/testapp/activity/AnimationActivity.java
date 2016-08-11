@@ -7,12 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.demos.testapp.R;
+import com.demos.testapp.view.AutoLoginButton;
 
 public class AnimationActivity extends AppCompatActivity {
     private Button btnAnim;
     private TextView tv;
+    private AutoLoginButton autoBtn;
 
 
     @Override
@@ -21,12 +24,14 @@ public class AnimationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_animation);
         btnAnim = (Button) findViewById(R.id.start_anim);
         tv = (TextView) findViewById(R.id.show);
+//        autoBtn= (AutoLoginButton) findViewById(R.id.auto_btn);
         btnAnim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 combine();
             }
         });
+//        addListener(autoBtn,false);
     }
 
     private void alpha() {
@@ -59,5 +64,21 @@ public class AnimationActivity extends AppCompatActivity {
         animSet.setDuration(5000);
         animSet.start();
     }
+//    private void addListener(final AutoLoginButton autoBtn, final boolean status){
+//        autoBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                autoBtn.buttonLoginAction();
+//                autoBtn.postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        autoBtn.buttonLoginResultAction(status);
+//                        String loginStatus=status?"登录成功":"登录失败";
+//                        Toast.makeText(AnimationActivity.this,loginStatus,Toast.LENGTH_SHORT).show();
+//                    }
+//                },3000);
+//            }
+//        });
+//    }
 
 }
