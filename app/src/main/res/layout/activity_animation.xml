@@ -19,6 +19,13 @@
         android:layout_gravity="center"
         android:text="Property Animation"
         android:textSize="25sp" />
+    <Button
+        android:id="@+id/change_act"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btn_to_another_act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <!--<com.demos.testapp.view.AutoLoginButton xmlns:custom="http://schemas.android.com/apk/res-auto"-->
         <!--android:id="@+id/auto_btn"-->

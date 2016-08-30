@@ -19,9 +19,9 @@ public class WebActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web);
         WebView webView = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webView.addJavascriptInterface(new WebAppInterface(this), "Android");
-        webView.loadUrl("file://d:/web.html");
+//        webSettings.setJavaScriptEnabled(true);
+//        webView.addJavascriptInterface(new WebAppInterface(this), "Android");
+        webView.loadUrl("www.baidu.com");
     }
 
     public class WebAppInterface {

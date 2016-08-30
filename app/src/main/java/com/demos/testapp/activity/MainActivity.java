@@ -1,10 +1,13 @@
 package com.demos.testapp.activity;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
@@ -46,16 +49,19 @@ public class MainActivity extends AppCompatActivity {
                 new Sample(R.string.str_anim, AnimationActivity.class),
                 new Sample(R.string.str_uil,UilActivity.class),
                 new Sample(R.string.str_webview,WebActivity.class),
-                new Sample(R.string.title_activity_pull_to_rresh,PullToRreshActivity.class)};
+                new Sample(R.string.title_activity_pull_to_rresh,PullToRreshActivity.class),
+                new Sample(R.string.page_fragment,FragActivity.class)};
         if (mLvToAcv != null) {
             mLvToAcv.setAdapter(new ArrayAdapter<>(this, R.layout.listview_content,
                     R.id.list_content, mSamples));
         }
         if (mLvToAcv != null) {
             mLvToAcv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @SuppressWarnings("unchecked")
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    startActivity(new Intent(MainActivity.this, mSamples[position].aClass));
+                    startActivity(new Intent(MainActivity.this, mSamples[position].aClass)
+                            , ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
                 }
             });
         }
