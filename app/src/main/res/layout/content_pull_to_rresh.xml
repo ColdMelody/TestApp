@@ -7,7 +7,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.demos.testapp.activity.PullToRreshActivity"
     tools:showIn="@layout/activity_pull_to_rresh">
-    <android.support.v4.widget.SwipeRefreshLayout
+    <com.demos.testapp.view.CustomSwipRefreshLayout
         android:id="@+id/swipe_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,6 +15,6 @@
             android:id="@+id/lv_refresh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </com.demos.testapp.view.CustomSwipRefreshLayout>
 
 </RelativeLayout>
